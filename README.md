@@ -47,12 +47,6 @@ Gradient cards with random colors and date formatting
 
 Spring Boot 3, Java 17, Hibernate 6, MySQL 8
 
-RESTful APIs with Swagger/OpenAPI documentation
-
-JUnit & Mockito tests (85%+ coverage)
-
-CI/CD pipeline with Jenkins
-
 ## 🎨 Modern UI/UX
 
 Responsive JSP views with Bootstrap 5 & DataTables.js
@@ -64,7 +58,7 @@ Non-blocking toast messages (Toastr.js)
 Consistent navbar, “Back to Dashboard” button, and layout
 
 # 📂 Repository Structure
-arduino
+
 ├── src
 
 │   ├── main
