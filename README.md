@@ -202,7 +202,8 @@ Please follow the existing code style, cover new features with tests, and update
 This project is licensed under the MIT License.
 
 ## 🙏 Acknowledgements
-IPH Technologies for mentorship & resources
+### udemy
+Bharath Thippireddy, in28minutes
 
 Spring Boot, Hibernate, and Bootstrap communities for stellar documentation
 # Made with ❤️ by Vageesh Singh
