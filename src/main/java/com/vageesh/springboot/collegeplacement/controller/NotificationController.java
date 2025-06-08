@@ -33,6 +33,9 @@ public class NotificationController {
                                      Model model) {
         Notification notification = new Notification(title, message);
         notificationService.createNotification(notification);
+
+        
+        // After creating the notification successfully
         return "redirect:/notifications";  
     }
 }

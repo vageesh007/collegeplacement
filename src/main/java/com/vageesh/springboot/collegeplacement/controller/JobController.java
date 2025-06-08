@@ -16,6 +16,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 @Controller
 @RequestMapping("/jobs")
@@ -121,5 +122,22 @@ public class JobController {
         
         return "jobDetails"; // Resolves to /WEB-INF/jsp/jobDetails.jsp
     }
+    
+ // Display edit form
+    @GetMapping("/post/edit")
+    public String editJobPage(@RequestParam Long id, Model model) {
+        Job job = jobService.getJobById(id);
+        model.addAttribute("job", job);
+        return "editJob"; // /WEB-INF/jsp/editJob.jsp
+    }
+
+    // Handle submission
+    @PostMapping("/post/edit")
+    public String updateJob(@ModelAttribute Job form, RedirectAttributes ra) {
+        jobService.createJob(form);
+        ra.addFlashAttribute("toastSuccess", "Job updated successfully!");
+        return "redirect:/jobs";
+    }
+
 
 }

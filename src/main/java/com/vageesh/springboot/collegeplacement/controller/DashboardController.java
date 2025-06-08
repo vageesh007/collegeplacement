@@ -1,3 +1,4 @@
+
 package com.vageesh.springboot.collegeplacement.controller;
 
 import com.vageesh.springboot.collegeplacement.model.Job;
@@ -56,5 +57,7 @@ public class DashboardController {
         
         return "dashboard";
     }
-
 }
+
+
+

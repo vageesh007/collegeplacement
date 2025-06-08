@@ -11,6 +11,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
+import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -21,6 +22,9 @@ public class AdminController {
 
     @Autowired
     private JobApplicationService applicationService;
+    
+    @Autowired
+    UserService userservice;
     
     // Inject PasswordEncoder and UserService
     @Autowired
@@ -142,4 +146,37 @@ public class AdminController {
         model.addAttribute("message", "New admin created successfully!");
         return "redirect:/admin/applications";  // Or redirect to a dedicated admin page
     }
+    
+    
+    @GetMapping("/students")
+    public String listStudents(
+        @RequestParam(required=false) String course,
+        @RequestParam(required=false) Integer semester,
+        Model model) {
+      List<User> students = userService.findStudents(course, semester);
+      model.addAttribute("students", students);
+      model.addAttribute("filterCourse", course);
+      model.addAttribute("filterSemester", semester);
+      return "adminStudents";  // JSP /WEB-INF/jsp/adminStudents.jsp
+    }
+
+    @GetMapping("/students/download")
+    public void downloadStudentsCSV(
+        @RequestParam(required=false) String course,
+        @RequestParam(required=false) Integer semester,
+        HttpServletResponse resp) throws IOException {
+
+      List<User> students = userService.findStudents(course, semester);
+      resp.setContentType("text/csv");
+      resp.setHeader("Content-Disposition","attachment; filename=\"students.csv\"");
+      PrintWriter w = resp.getWriter();
+      w.println("ID,Name,Email,Course,Semester,CreatedAt");
+      for(User s: students) {
+        w.printf("%d,%s,%s,%s,%d,%s%n",
+          s.getId(), s.getName(), s.getEmail(),
+          s.getCourse(), s.getSemester(), s.getCreatedAt());
+      }
+      w.flush();
+    }
+
 }
