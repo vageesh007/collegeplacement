@@ -131,7 +131,7 @@ Consistent navbar, “Back to Dashboard” button, and layout
 Clone the repo
 
 bash
-git clone https://github.com/yourusername/college-placement-portal.git
+git clone https://github.com/vageesh007/college-placement-portal.git
 cd college-placement-portal
 Configure MySQL
 
