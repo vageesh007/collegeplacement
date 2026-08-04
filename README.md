@@ -2,6 +2,18 @@
 Streamlining Campus Recruitment
 A full-stack web application to automate and centralize college placement processes—job postings, eligibility filtering, applications, interview scheduling, notifications, and reporting—built with Java Spring Boot, Hibernate, MySQL, and a modern JSP/Bootstrap frontend.
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/087fe2c1-f27f-4c65-b11a-97c1a58cc009" width="250">
+  <img src="https://github.com/user-attachments/assets/85bfb7f2-df58-4754-8681-884fccd91172" width="250">
+  <img src="https://github.com/user-attachments/assets/a5404056-5d6c-444e-9615-4ead003ef3c7" width="250">
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/0a1cc3c2-6735-4758-b05f-e3a69e45055b" width="250">
+  <img src="https://github.com/user-attachments/assets/77a9c3dd-1993-4d66-8d72-0a8530358e22" width="250">
+ 
+</p>
+
 ## 🚀 Features
 ## 🔐 Secure Authentication & RBAC
 
