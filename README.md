@@ -270,7 +270,7 @@ git push origin feature/YourFeature
 
 # 📄 License
 
-Licensed under the **MIT License**.
+This project is licensed under the MIT License. See the `LICENSE` file for details.
 
 ---
 
