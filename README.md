@@ -1,6 +1,34 @@
 # 🎓 College Placement Web Portal
-Streamlining Campus Recruitment
-A full-stack web application to automate and centralize college placement processes—job postings, eligibility filtering, applications, interview scheduling, notifications, and reporting—built with Java Spring Boot, Hibernate, MySQL, and a modern JSP/Bootstrap frontend.
+
+<p align="center">
+  <h3 align="center">Streamlining Campus Recruitment</h3>
+  <p align="center">
+    A full-stack web application to automate and centralize college placement processes—job postings, eligibility filtering, applications, interview scheduling, notifications, and reporting—built with Java Spring Boot, Hibernate, MySQL, and a modern JSP/Bootstrap frontend.
+  </p>
+</p>
+
+---
+
+## 🛠️ Tech Stack
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Java-17-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" />
+  <img src="https://img.shields.io/badge/Spring_Boot-3-6DB33F?style=for-the-badge&logo=springboot&logoColor=white" />
+  <img src="https://img.shields.io/badge/Spring_Security-6-6DB33F?style=for-the-badge&logo=springsecurity&logoColor=white" />
+  <img src="https://img.shields.io/badge/Hibernate-6-59666C?style=for-the-badge&logo=hibernate&logoColor=white" />
+  <img src="https://img.shields.io/badge/MySQL-8-4479A1?style=for-the-badge&logo=mysql&logoColor=white" />
+  <img src="https://img.shields.io/badge/JSP-FF6F00?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Bootstrap-5-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white" />
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
+  <img src="https://img.shields.io/badge/Maven-C71A36?style=for-the-badge&logo=apachemaven&logoColor=white" />
+  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
+</p>
+
+---
+
+## 📸 Screenshots
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/087fe2c1-f27f-4c65-b11a-97c1a58cc009" width="250">
@@ -14,60 +42,69 @@ A full-stack web application to automate and centralize college placement proces
  
 </p>
 
-## 🚀 Features
-## 🔐 Secure Authentication & RBAC
+---
+# ✨ Features
 
-Student and Admin roles via Spring Security
+## 🔐 Secure Authentication
 
-Form-login and REST API options
+- Spring Security authentication
+- Role-Based Access Control (Admin & Student)
+- Secure login and registration
+- Session management
 
-## 📋 Job Management
+---
 
-Admin can create, edit, delete job postings
+## 💼 Job Management
 
-Eligibility filtering by course & semester
+- Create, update and delete job postings
+- Eligibility filtering by course & semester
+- Company information with salary and location
+- Job status management
 
-Company logos & metadata (salary, location)
+---
 
-# 🧑‍🎓 Student Portal
+## 🎓 Student Portal
 
-Browse and apply to eligible jobs
+- Browse eligible jobs
+- Apply with one click
+- Resume upload
+- Manage personal profile
+- View application status
 
-Profile management (name, email, course, semester)
-
-Single-click “Apply” with file upload and confirmation toast
+---
 
 ## 📊 Admin Dashboard
 
-View & filter job applications (course, semester, job title)
+- View all applications
+- Filter by course, semester and job
+- Export applications to CSV
+- Manage student records
+- Export student data
+- Live toast notifications
 
-Download filtered data as CSV
+---
 
-Manage student list with filters & CSV export
+## 📣 Notifications
 
-Live toastr notifications for updates
+- Create campus notifications
+- Dashboard announcement panel
+- Recent notifications widget
+- Beautiful gradient cards
+- Date formatting
 
-## 📣 Notifications Module
+---
 
-Admin can post campus/event notifications
+## 🎨 Modern UI
 
-Latest 5 on dashboard; full list in a dedicated view
+- Responsive Bootstrap 5 interface
+- JSP Views
+- DataTables integration
+- Animate.css animations
+- Toastr notifications
+- Consistent navigation
+- Dashboard shortcuts
 
-Gradient cards with random colors and date formatting
-
-## 🔧 Robust Backend
-
-Spring Boot 3, Java 17, Hibernate 6, MySQL 8
-
-## 🎨 Modern UI/UX
-
-Responsive JSP views with Bootstrap 5 & DataTables.js
-
-Smooth animations via Animate.css
-
-Non-blocking toast messages (Toastr.js)
-
-Consistent navbar, “Back to Dashboard” button, and layout
+---
 
 ## 📂 Repository Structure
 
@@ -116,78 +153,141 @@ college-placement-portal/
 └── .gitignore
 ```
 
-# 🔧 Installation & Setup
-Clone the repo
+# 🚀 Installation
 
-bash
+### 1️⃣ Clone Repository
+
+```bash
 git clone https://github.com/vageesh007/college-placement-portal.git
 cd college-placement-portal
-Configure MySQL
+```
 
-Create a database:
+### 2️⃣ Create Database
 
-sql
+```sql
 CREATE DATABASE placement_portal;
-Update src/main/resources/application.properties:
+```
 
-properties
+### 3️⃣ Configure Database
+
+Update:
+
+```
+src/main/resources/application.properties
+```
+
+```properties
 spring.datasource.url=jdbc:mysql://localhost:3306/placement_portal
-spring.datasource.username=YOUR_DB_USER
-spring.datasource.password=YOUR_DB_PASS
-Build & Run
+spring.datasource.username=YOUR_DB_USERNAME
+spring.datasource.password=YOUR_DB_PASSWORD
+```
 
-bash
+### 4️⃣ Build Project
+
+```bash
 mvn clean package
+```
+
+### 5️⃣ Run Application
+
+```bash
 mvn spring-boot:run
-App runs at http://localhost:8080/
+```
 
-Access
+Application will start at:
 
-Admin: admin@example.com / Admin@123
+```
+http://localhost:8080
+```
 
-Student: student@example.com / Student@123
+---
 
-## ⚙️ Usage
-Login/Register at /login or /register.
+# 🔑 Demo Credentials
 
-Admin Dashboard:
+### 👨‍💼 Admin
 
-Post/Edit/Delete Jobs: /jobs/post
+```
+Email    : admin@example.com
+Password : Admin@123
+```
 
-View Applications: /admin/applications
+### 👨‍🎓 Student
 
-View Student List: /admin/students
+```
+Email    : student@example.com
+Password : Student@123
+```
 
-Create Notifications: /admin/notifications/create
+---
 
-Student Dashboard:
+# 📖 Usage
 
-Browse Jobs: /jobs
+### Admin
 
-View & Apply: click “View Details” on a job card
+- Post Jobs
+- Edit Jobs
+- Delete Jobs
+- Manage Applications
+- Export CSV
+- Manage Students
+- Create Notifications
 
-Edit Profile: /profile
+### Student
 
-## 🤝 Contributing
-Fork the repo
+- Register/Login
+- Browse Jobs
+- Apply
+- Update Profile
+- View Notifications
 
-Create a feature branch: git checkout -b feature/YourFeature
+---
 
-Commit changes: git commit -m "Add YourFeature"
+# 🤝 Contributing
 
-Push: git push origin feature/YourFeature
+1. Fork the repository
 
-Open a Pull Request
+2. Create a feature branch
 
-Please follow the existing code style, cover new features with tests, and update documentation.
+```bash
+git checkout -b feature/YourFeature
+```
 
-## 📄 License
-This project is licensed under the MIT License.
+3. Commit changes
 
-## 🙏 Acknowledgements
-### udemy
-Bharath Thippireddy, in28minutes
+```bash
+git commit -m "Add YourFeature"
+```
 
-Spring Boot, Hibernate, and Bootstrap communities for stellar documentation
-# Made with ❤️ by Vageesh Singh
-# ✨ Happy Coding & Best of Luck with Your College Placements! ✨
+4. Push
+
+```bash
+git push origin feature/YourFeature
+```
+
+5. Open a Pull Request
+
+---
+
+# 📄 License
+
+Licensed under the **MIT License**.
+
+---
+
+# 🙏 Acknowledgements
+
+- Bharath Thippireddy
+- in28Minutes
+- Spring Boot Community
+- Hibernate Community
+- Bootstrap Community
+
+---
+
+<h3 align="center">
+Made with ❤️ by <b>Vageesh Singh</b>
+</h3>
+
+<h3 align="center">
+⭐ If you like this project, consider giving it a star!
+</h3>
