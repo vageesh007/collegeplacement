@@ -57,75 +57,52 @@ Non-blocking toast messages (Toastr.js)
 
 Consistent navbar, “Back to Dashboard” button, and layout
 
-# 📂 Repository Structure
+## 📂 Repository Structure
 
-├── src
-
-│   ├── main
-
-│   │   ├── java/com/vageesh/springboot/collegeplacement
-
-│   │   │   ├── controller
-
-│   │   │   ├── model
-
-│   │   │   ├── repository
-
-│   │   │   ├── service
-
-│   │   │   └── config
-
-│   │   └── resources
-
-│   │       ├── application.properties
-
-│   │       └── static
-
-│   │           ├── css
-
-│   │           ├── js
-
-│   │           └── uploads
-
-│   └── webapp
-
-│       └── WEB-INF
-
-│           └── jsp
-
-│               ├── includes
-
-│               │   ├── header.jsp
-
-│               │   └── navbar.jsp
-
-│               ├── login.jsp
-
-│               ├── register.jsp
-
-│               ├── dashboard.jsp
-
-│               ├── jobs.jsp
-
-│               ├── jobDetails.jsp
-
-│               ├── postJob.jsp
-
-│               ├── editJob.jsp
-
-│               ├── profile.jsp
-
-│               ├── notifications.jsp
-
-│               ├── createNotification.jsp
-
-│               ├── adminApplications.jsp
-
-│               ├── adminStudents.jsp
-
-│               └── error.jsp
-
-└── README.md
+```text
+college-placement-portal/
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   └── com/
+│   │   │       └── vageesh/
+│   │   │           └── springboot/
+│   │   │               └── collegeplacement/
+│   │   │                   ├── config/
+│   │   │                   ├── controller/
+│   │   │                   ├── model/
+│   │   │                   ├── repository/
+│   │   │                   ├── service/
+│   │   │                   └── CollegePlacementApplication.java
+│   │   ├── resources/
+│   │   │   ├── application.properties
+│   │   │   └── static/
+│   │   │       ├── css/
+│   │   │       ├── js/
+│   │   │       └── uploads/
+│   │   └── webapp/
+│   │       └── WEB-INF/
+│   │           └── jsp/
+│   │               ├── includes/
+│   │               │   ├── header.jsp
+│   │               │   └── navbar.jsp
+│   │               ├── login.jsp
+│   │               ├── register.jsp
+│   │               ├── dashboard.jsp
+│   │               ├── jobs.jsp
+│   │               ├── jobDetails.jsp
+│   │               ├── postJob.jsp
+│   │               ├── editJob.jsp
+│   │               ├── profile.jsp
+│   │               ├── notifications.jsp
+│   │               ├── createNotification.jsp
+│   │               ├── adminApplications.jsp
+│   │               ├── adminStudents.jsp
+│   │               └── error.jsp
+├── pom.xml
+├── README.md
+└── .gitignore
+```
 
 # 🔧 Installation & Setup
 Clone the repo
